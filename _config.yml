@@ -1,18 +1,22 @@
 # Dependencies
 markdown:         rdiscount
-highlighter:      pygments
+pygments:         true
 
 # Permalinks
 permalink:        pretty
 
 # Server
-source:           docs
-destination:      _gh_pages
+source:           ./docs
+destination:      ./_gh_pages
 host:             0.0.0.0
 port:             9001
 baseurl:          /
-url:              http://getbootstrap.com
+url:              http://localhost:9001
 encoding:         UTF-8
+
+exclude:
+  - "jade"
+  - "vendor"
 
 # Custom vars
 current_version:  3.1.1
